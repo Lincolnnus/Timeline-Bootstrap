@@ -6806,7 +6806,40 @@ th.visible-print,
 td.visible-print {
   display: none !important;
 }
-
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 35px;
+  vertical-align: text-top;
+  background-image: url("../img/icons.png");
+  background-position: 35px 35px;
+  background-repeat: no-repeat;
+}
+.icon-plan {
+  background-position: 0 0;
+}
+.icon-encounter {
+  background-position: -35px 0;
+}
+.icon-immunization {
+  background-position: -70px 0;
+}
+.icon-medication {
+  background-position: -105px 0;
+}
+.icon-problem {
+  background-position: -140px 0;
+}
+.icon-procedure {
+  background-position: -175px 0;
+}
+.icon-lab {
+  background-position: -210px 0;
+}
 @media print {
   .visible-print {
     display: block !important;
