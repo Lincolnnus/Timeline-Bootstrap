@@ -48,6 +48,27 @@
     </style>
   </head>
   <body>
+  	<div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Timeline Viewer</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="detail.html">Detail</a></li>
+            <li><a href="labs.html">Labs</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="active"><a href="login.html">Login</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
     <div class="container">
 	  <div class="row">
 	    <div class="col-xs-4">
@@ -190,7 +211,12 @@
 		<p>© GSOC 2013</p>
 	  </footer>
 	</div>
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ejs.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/bindaas.js"></script>
+    <script type="text/javascript">showTimeline();
+	</script>
   </body>
 </html>
