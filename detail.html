@@ -38,6 +38,40 @@
 			background-repeat:repeat-y;
 			background-position:center; 
     	}
+    	.detail{
+    		padding-bottom: 10px;
+    	}
+    	.date {
+		  display: inline;
+		  padding: .2em .6em .3em;
+		  font-size: 120%;
+		  font-weight: bold;
+		  line-height: 1;
+		  color: #ffffff;
+		  text-align: center;
+		  white-space: nowrap;
+		  vertical-align: baseline;
+		  border-radius: .25em;
+		}
+
+		.date-plan{
+			background-color: #C0C0C0;
+		}
+		.date-encounter{
+			background-color: #00CCFF;
+		}
+		.date-problem{
+			background-color: #FFCC66;
+		}
+		.date-procedure{
+			background-color: #33CC66;
+		}
+		.date-immunization{
+			background-color: #9966CC;
+		}
+		.date-medication{
+			background-color: #3366CC;
+		}
     </style>
   </head>
   <body>
@@ -80,32 +114,86 @@
 	  		<div class="row">
 	  			<h3><i class="icon-plan"></i>Plan of Care</h3>
 	  			<hr>
-	  			<div class="">
-	  				<span class="label label-default">Jun 1,2007</span><strong>Chest X-Ray</strong>
-	  				<p><span class="gray">Instructions:</span>Consultation with Dr.George</p>
-	  			</div>
+	  			<div class="row detail">
+		  			<div class="col-xs-3 right">
+		  				<span class="date date-plan">Jun 2,2007</span>
+		  			</div>
+		  			<div class="col-xs-9">
+		  				<strong>Chest X-Ray</strong>
+		  			</div>
+		  		</div>
+	  			<div class="row detail">
+		  			<div class="col-xs-3 right">
+		  				<span class="date date-plan">Jun 1,2007</span>
+		  				<p><span class="gray">Instructions:</span></p>
+		  			</div>
+		  			<div class="col-xs-9">
+		  				<strong>Office consultation</strong>
+		  				<p>Consultation with Dr.George</p>
+		  			</div>
+		  		</div>
 	  		</div>
 	  		<div class="row">
 	  			<h3><i class="icon-encounter"></i>Encounters</h3>
 	  			<hr>
+	  			<div class="row detail">
+		  			<div class="col-xs-3 right">
+		  				<span class="date date-encounter">Jun 2,2007</span>
+		  			</div>
+		  			<div class="col-xs-9">
+		  				<strong>Chest X-Ray</strong>
+		  			</div>
+		  		</div>
 	  		</div>
 	  		<div class="row">
 	  			<h3><i class="icon-immunization"></i>Immunizations</h3>
 	  			<hr>
+	  			<div class="row detail">
+		  			<div class="col-xs-3 right">
+		  				<span class="date date-immunization">Jun 2,2007</span>
+		  			</div>
+		  			<div class="col-xs-9">
+		  				<strong>Chest X-Ray</strong>
+		  			</div>
+		  		</div>
 	  		</div>
 	  	</div>
 	  	<div class="col-xs-6">
 	  		<div class="row">
 	  			<h3><i class="icon-medication"></i>Medications</h3>
 	  			<hr>
+	  			<div class="row detail">
+		  			<div class="col-xs-3 right">
+		  				<span class="date date-medication">Jun 2,2007</span>
+		  			</div>
+		  			<div class="col-xs-9">
+		  				<strong>Chest X-Ray</strong>
+		  			</div>
+		  		</div>
 	  		</div>
 	  		<div class="row">
 	  			<h3><i class="icon-problem"></i>Problem List</h3>
 	  			<hr>
+	  			<div class="row detail">
+		  			<div class="col-xs-3 right">
+		  				<span class="date date-problem">Jun 2,2007</span>
+		  			</div>
+		  			<div class="col-xs-9">
+		  				<strong>Chest X-Ray</strong>
+		  			</div>
+		  		</div>
 	  		</div>
 	  		<div class="row">
 	  			<h3><i class="icon-procedure"></i>Procedures</h3>
 	  			<hr>
+	  			<div class="row detail">
+		  			<div class="col-xs-3 right">
+		  				<span class="date date-procedure">Jun 2,2007</span>
+		  			</div>
+		  			<div class="col-xs-9">
+		  				<strong>Chest X-Ray</strong>
+		  			</div>
+		  		</div>
 	  		</div>
 	  	</div>
 	  </div>

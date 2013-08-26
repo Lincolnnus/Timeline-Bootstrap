@@ -4850,6 +4850,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .label-default {
   background-color: #999999;
 }
+.label-plan{
+  background-color: #999999;
+  font-size: 20px;
+}
 
 .label-default[href]:hover,
 .label-default[href]:focus {
