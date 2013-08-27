@@ -11,6 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -18,61 +19,6 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    <style>
-    	.gray{
-    		color:gray;
-    	}
-    	.dashed{
-			border:1px #cccccc dashed;
-    	}
-    	.right{
-    		text-align: right;
-    	}
-    	.label-corner{
-    		position: relative;
-    		left:48%;
-    		top:-30px;
-    	}
-    	.timeline{
-    		background-image: url("img/timeline.png");
-			background-repeat:repeat-y;
-			background-position:center; 
-    	}
-    	.detail{
-    		padding-bottom: 10px;
-    	}
-    	.date {
-		  display: inline;
-		  padding: .2em .6em .3em;
-		  font-size: 120%;
-		  font-weight: bold;
-		  line-height: 1;
-		  color: #ffffff;
-		  text-align: center;
-		  white-space: nowrap;
-		  vertical-align: baseline;
-		  border-radius: .25em;
-		}
-
-		.date-plan{
-			background-color: #C0C0C0;
-		}
-		.date-encounter{
-			background-color: #00CCFF;
-		}
-		.date-problem{
-			background-color: #FFCC66;
-		}
-		.date-procedure{
-			background-color: #33CC66;
-		}
-		.date-immunization{
-			background-color: #9966CC;
-		}
-		.date-medication{
-			background-color: #3366CC;
-		}
-    </style>
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-static-top">
@@ -97,37 +43,7 @@
       </div>
     </div>
     <div class="container">
-	  <div class="row">
-	    <div class="col-xs-4">
-	    	<div class="header-unit">
-			  <h3>Ellen Ross</h3>
-			  <strong>Female,Married,Christian,Asian</strong>
-			  <p> 
-			  	<small class="gray">Language:</small>English</br>
-			  	<small class="gray">Birthday:</small>Mar 7 1960</br>
-			  	<small class="gray">Address:</small>17 Daws Road, Portland, OR 97006<br>
-			  	<small class="gray">Phone:</small>415-555-1229
-			  </p>
-			</div>
-	    </div>
-	    <div class="col-xs-4">
-	    	 <h3>Marta Shan</h3>
-			  <strong>Sister</strong>
-			  <p> 
-			  	<small class="gray">Address:</small>17 Daws Road, Portland, OR 97006<br>
-			  	<small class="gray">Phone:</small>415-555-1229
-			  </p>
-	    </div>
-	    <div class="col-xs-4">
-	    	<div class="header-unit">
-			  <h3>Ashby Medical Center</h3>
-			  <strong>Provider</strong>
-			  <p> 
-			  	<small class="gray">Address:</small>17 Daws Road, Portland, OR 97006<br>
-			  	<small class="gray">Phone:</small>415-555-1229
-			  </p>
-			</div>
-	    </div>
+	   <div class="row" id="demographics">
 	  </div>
 	  <hr>
 	  <div class="row">
@@ -154,67 +70,17 @@
 		  			</div>
 		  		</div>
 	  		</div>
-	  		<div class="row">
-	  			<h3><i class="icon-encounter"></i>Encounters</h3>
-	  			<hr>
-	  			<div class="row detail">
-		  			<div class="col-xs-3 right">
-		  				<span class="date date-encounter">Jun 2,2007</span>
-		  			</div>
-		  			<div class="col-xs-9">
-		  				<strong>Chest X-Ray</strong>
-		  			</div>
-		  		</div>
+	  		<div class="row" id="encounters">
 	  		</div>
-	  		<div class="row">
-	  			<h3><i class="icon-immunization"></i>Immunizations</h3>
-	  			<hr>
-	  			<div class="row detail">
-		  			<div class="col-xs-3 right">
-		  				<span class="date date-immunization">Jun 2,2007</span>
-		  			</div>
-		  			<div class="col-xs-9">
-		  				<strong>Chest X-Ray</strong>
-		  			</div>
-		  		</div>
+	  		<div class="row" id="immunizations">
 	  		</div>
 	  	</div>
 	  	<div class="col-xs-6">
-	  		<div class="row">
-	  			<h3><i class="icon-medication"></i>Medications</h3>
-	  			<hr>
-	  			<div class="row detail">
-		  			<div class="col-xs-3 right">
-		  				<span class="date date-medication">Jun 2,2007</span>
-		  			</div>
-		  			<div class="col-xs-9">
-		  				<strong>Chest X-Ray</strong>
-		  			</div>
-		  		</div>
+	  		<div class="row" id="medications">
 	  		</div>
-	  		<div class="row">
-	  			<h3><i class="icon-problem"></i>Problem List</h3>
-	  			<hr>
-	  			<div class="row detail">
-		  			<div class="col-xs-3 right">
-		  				<span class="date date-problem">Jun 2,2007</span>
-		  			</div>
-		  			<div class="col-xs-9">
-		  				<strong>Chest X-Ray</strong>
-		  			</div>
-		  		</div>
+	  		<div class="row" id="problems">
 	  		</div>
-	  		<div class="row">
-	  			<h3><i class="icon-procedure"></i>Procedures</h3>
-	  			<hr>
-	  			<div class="row detail">
-		  			<div class="col-xs-3 right">
-		  				<span class="date date-procedure">Jun 2,2007</span>
-		  			</div>
-		  			<div class="col-xs-9">
-		  				<strong>Chest X-Ray</strong>
-		  			</div>
-		  		</div>
+	  		<div class="row" id="procedures">
 	  		</div>
 	  	</div>
 	  </div>
@@ -222,8 +88,13 @@
 	  <footer>
 		<p>© GSOC 2013</p>
 	  </footer>
+	  <script src="js/jquery.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/ejs.js"></script>
+	  <script src="js/bindaas.js"></script>
+	  <script>
+	  	showDetail();
+	  </script>
 	</div>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -11,41 +11,13 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
+    <link href="css/timeline.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <link href="css/bootstrap-ie7.css" rel="stylesheet">
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    <style>
-    	.gray{
-    		color:gray;
-    	}
-    	.dashed{
-			border:1px #cccccc dashed;
-    	}
-    	.right{
-    		text-align: right;
-    	}
-    	.label-corner{
-    		position: relative;
-    		left:48%;
-    		top:-30px;
-    	}
-    	.timeline{
-    		background-image: url("img/timeline.png");
-			background-repeat:repeat-y;
-			background-position:center; 
-    	}
-		.right blockquote{
-		  border-right: 5px solid #eeeeee;
-		}
-
-		.left blockquote{
-		  border-left: 5px solid #eeeeee;
-		}
-    </style>
   </head>
   <body>
   	<div class="navbar navbar-inverse navbar-static-top">
@@ -70,37 +42,7 @@
       </div>
     </div>
     <div class="container">
-	  <div class="row">
-	    <div class="col-xs-4">
-	    	<div class="header-unit">
-			  <h3>Ellen Ross</h3>
-			  <strong>Female,Married,Christian,Asian</strong>
-			  <p> 
-			  	<small class="gray">Language:</small>English</br>
-			  	<small class="gray">Birthday:</small>Mar 7 1960</br>
-			  	<small class="gray">Address:</small>17 Daws Road, Portland, OR 97006<br>
-			  	<small class="gray">Phone:</small>415-555-1229
-			  </p>
-			</div>
-	    </div>
-	    <div class="col-xs-4">
-	    	 <h3>Marta Shan</h3>
-			  <strong>Sister</strong>
-			  <p> 
-			  	<small class="gray">Address:</small>17 Daws Road, Portland, OR 97006<br>
-			  	<small class="gray">Phone:</small>415-555-1229
-			  </p>
-	    </div>
-	    <div class="col-xs-4">
-	    	<div class="header-unit">
-			  <h3>Ashby Medical Center</h3>
-			  <strong>Provider</strong>
-			  <p> 
-			  	<small class="gray">Address:</small>17 Daws Road, Portland, OR 97006<br>
-			  	<small class="gray">Phone:</small>415-555-1229
-			  </p>
-			</div>
-	    </div>
+	 <div class="row" id="demographics">
 	  </div>
 	  <hr>
 	  <div class="row">
@@ -210,13 +152,12 @@
 	  <footer>
 		<p>© GSOC 2013</p>
 	  </footer>
+	    <script src="js/jquery.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/ejs.js"></script>
+	    <script src="js/bindaas.js"></script>
+	    <script type="text/javascript">showTimeline();
+		</script>
 	</div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ejs.js"></script>
-    <script src="js/view.js"></script>
-    <script src="js/bindaas.js"></script>
-    <script type="text/javascript">showTimeline();
-	</script>
   </body>
 </html>
