@@ -939,6 +939,7 @@ var procedures=[
     "uid": 0
   }
 ];
+<<<<<<< HEAD
 
 var timeline=[
 {
@@ -1020,6 +1021,8 @@ var timeline=[
 }]
 }
 ];
+=======
+>>>>>>> master
 function showDetail(){
     new EJS({url: 'templates/demographics.ejs'}).update('demographics', {demographics: demographics});
     new EJS({url: 'templates/immunizations.ejs'}).update('immunizations', {immunizations: immunizations});
@@ -1031,7 +1034,10 @@ function showDetail(){
 function showTimeline(){
     new EJS({url: 'templates/demographics.ejs'}).update('demographics', {demographics: demographics});
     new EJS({url: 'templates/allergies.ejs'}).update('allergies', {allergies: allergies});
+<<<<<<< HEAD
     new EJS({url: 'templates/timeline.ejs'}).update('timeline', {timeline: timeline});
+=======
+>>>>>>> master
 }
 function showLabs(){
   new EJS({url: 'templates/demographics.ejs'}).update('demographics', {demographics: demographics});
