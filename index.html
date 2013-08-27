@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <title>GSOC 2013 Timeline Viewer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <link href="css/bootstrap-ie7.css" rel="stylesheet">
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Timeline Viewer</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="detail.html">Detail</a></li>
+            <li><a href="labs.html">Labs</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="active"><a href="login.html">Login</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+	 <div class="row" id="demographics">
+	  </div>
+	  <hr>
+	  <div class="row">
+	  	<div class="col-xs-9">
+		  	<span class="label label-info label-corner">2008</span>
+	  		<div class="row  timeline">
+	  			<div class="col-xs-6 right">
+	  				<blockquote>Chest X Ray <small>May 7 2007</small><i class="icon-plan"></i></blockquote>
+
+	  				<blockquote>Sputum<small>May 6 2007</small><i class="icon-plan"></i></blockquote>
+	  			</div>
+	  			<div class="col-xs-6 left">
+	  				<blockquote>Plasma:prothrombin <small>May 7 2006</small><i class="icon-lab"></i></blockquote>
+
+	  				<blockquote>Plasma:prothrombin <small>May 6 2006</small><i class="icon-lab"></i></blockquote>
+	  			</div>
+	  		</div>
+	  		<hr class="dashed">
+		  	<span class="label label-info label-corner">2007</span>
+		  	<div class="row timeline">
+	  			<div class="col-xs-6 right">
+	  				<blockquote>Chest X Ray <small>May 5 2006</small><i class="icon-encounter"></i></blockquote>
+
+	  				<blockquote>Chest X Ray <small>May 4 2006</small><i class="icon-encounter"></i></blockquote>
+	  			</div>
+	  			<div class="col-xs-6 left">
+	  				<blockquote>Plasma:prothrombin <small>May 7 2006</small><i class="icon-problem"></i></blockquote>
+
+	  				<blockquote>Plasma:prothrombin <small>May 6 2006</small><i class="icon-procedure"></i></blockquote>
+	  				<blockquote>Plasma:prothrombin <small>May 7 2006</small><i class="icon-medication"></i></blockquote>
+
+	  				<blockquote>Plasma:prothrombin <small>May 6 2006</small><i class="icon-problem"></i></blockquote>
+	  			</div>
+	  		</div>
+	  		<hr class="dashed">
+		  	<span class="label label-info label-corner">2006</span>
+		  	<div class="row timeline">
+	  			<div class="col-xs-6 right">
+	  				<blockquote>Labor and delivery <small>May 5 2005</small><i class="icon-problem"></i></blockquote>
+
+	  				<blockquote>Gall <small>May 4 2005</small><i class="icon-medication"></i></blockquote>
+	  				<blockquote>Labor and delivery <small>May 5 2005</small><i class="icon-encounter"></i></blockquote>
+
+	  				<blockquote>Gall <small>May 4 2005</small><i class="icon-medication"></i></blockquote>
+	  			</div>
+	  			<div class="col-xs-6 left">
+	  				<blockquote>Plasma:prothrombin <small>May 7 2005</small><i class="icon-lab"></i></blockquote>
+
+	  				<blockquote>Plasma:prothrombin <small>May 6 2005</small><i class="icon-lab"></i></blockquote>
+	  			</div>
+	  		</div>
+	  		<hr class="dashed">
+		  	<span class="label label-info label-corner">2005</span>
+	  	</div>
+	  	<div class="col-xs-3">
+	  		<div class="row">
+	  			<div class="col-xs-12">
+	  				<div class="header-unit">
+					  <h3><i class="icon-plan"></i> Plan of Care</h3>
+					  <hr>
+					  <strong>Office Consultant</strong>
+					  <p class="gray">May 28, 2007</p>
+					  <p> Consult with Dr.George </p>
+					  <strong>Sputum Culture</strong>
+					  <p class="gray">May 28, 2007</p>
+					  <p>Instructions</p>
+					  <strong>Chest X Ray</strong>
+					  <p class="gray">May 28, 2007</p>
+					  <p>Instructions</p>
+					</div>
+	  			</div>
+	  		</div>
+	  		<div class="row">
+	  			<div class="col-xs-12">
+	  				<div class="header-unit">
+					  <h3>Allergies</h3>
+					  <hr>
+					  <strong>Penicillin</strong>
+					  <p>
+					  <small class="gray">Reaction:</small> Hive<br>
+					  <small class="gray">Severity:</small>Moderate to Severe
+					  </p>
+					  <strong>Bee Stings</strong>
+					  <p>
+					  <small class="gray">Reaction:</small> Hive<br>
+					  <small class="gray">Severity:</small>Moderate to Severe
+					  </p>
+					</div>
+	  			</div>
+	  		</div>
+	  		<div class="row">
+	  			<div class="col-xs-12">
+	  				<div class="header-unit">
+					  <h3>Recommendations</h3>
+					  <hr>
+					  <strong>Provider</strong>
+					  <p> 
+					  	<small class="gray">Address:</small>17 Daws Road, Portland, OR 97006<br>
+					  	<small class="gray">Phone:</small>415-555-1229
+					  </p>
+					</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+	  <hr>
+	  <footer>
+		<p>© GSOC 2013</p>
+	  </footer>
+	    <script src="js/jquery.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/ejs.js"></script>
+	    <script src="js/bindaas.js"></script>
+	    <script type="text/javascript">showTimeline();
+		</script>
+	</div>
+  </body>
+</html>
