@@ -1,5 +1,22 @@
-<% for (i=0;i<labs.length;i++){%>
-<div class="well">
-	<h3><a onclick="showMore('http://bioportal.bioontology.org/ontologies/1350?p=terms&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FLOINC%2F<%= labs[i].code %>')"><%= labs[i].name %></a></h3>
-</div>
+<div class="col-xs-6">
+<% for (i=0;i<labs.length;i++){
+if (i == Math.floor(labs.length/2)){%>
+</div><div class="col-xs-6"> <%}%>
+	<div class="row">
+		<h3><i class="icon-lab"></i><small class="right"><a onclick="showMore('http://bioportal.bioontology.org/ontologies/1350?p=terms&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FLOINC%2F<%= labs[i].code %>')"><%= labs[i].name %></a></small></h3>
+		<hr>
+		<% for (j=0;j<labs[i].results.length;j++){%>
+		<div class="row detail">
+			<div class="col-xs-3 right">
+				<span class="date date-plan"><%= formatDate(labs[i].results[j].date) %></span>
+				<p><%= labs[i].results[j].value %></p>
+			</div>
+			<div class="col-xs-9">
+				<strong><%= labs[i].results[j].name %></strong>
+				<p><%= labs[i].results[j].unit %></p>
+			</div>
+		</div>
+		<% } %>
+	</div>
 <%}%>
+</div>

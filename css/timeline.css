@@ -25,7 +25,7 @@
   border-left: 5px solid #eeeeee;
 }
 .detail{
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 }
 .date {
   display: inline;
@@ -39,7 +39,9 @@
   vertical-align: baseline;
   border-radius: .25em;
 }
-
+p{
+	padding-top: 10px;
+}
 .date-plan{
 	background-color: #C0C0C0;
 }

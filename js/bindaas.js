@@ -1739,8 +1739,10 @@ function mergeTimeline(restruct, record){
   }
   return restruct;
 }
+
 function showLabs(){
   new EJS({url: 'templates/demographics.ejs'}).update('demographics', {demographics: demographics});
+  new EJS({url: 'templates/labs.ejs'}).update('labs', {labs: labs});
 }
 function formatDate(jsonDate)
 {
