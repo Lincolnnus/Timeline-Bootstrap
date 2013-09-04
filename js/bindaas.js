@@ -1810,7 +1810,7 @@ function mergeTimeline(restruct, record){
         yearExist = true;
     }
   }
-  if (!yearExist){
+  if (!yearExist&&record.date){
     var newRecord=new Object();
     newRecord.year = record.date.substr(0,4);
     newRecord.data = [];
