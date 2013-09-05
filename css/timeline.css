@@ -93,15 +93,24 @@ p{
 }
 .value-unit{
 	text-align: right;
+	margin:8px 0px 0px;
 }
 .value{
 	width: 60px;
-	margin-left: 10px;
-	padding: 5px 10px;
 	color:white;
+	padding: 5px 10px 5px 10px;
+	margin: 0px 5px;
+	height: 30px;
+	width: 100px;
 }
-.value-healthy{
-	background-color: green;
+.healthy{
+	background-color: #00CC99;
+}
+.unhealthy{
+	background-color: #FFCC66;
+}
+.very-unhealthy{
+	background-color: #993333;
 }
 .slide-unit{
 	background-color: #D8D8D8;
@@ -112,7 +121,7 @@ p{
 .slide-unit .min{
 	color:black;
 	position: absolute;
-	left:10%;
+	left:20%;
 }
 .slide-unit .max{
 	color:black;
@@ -121,14 +130,14 @@ p{
 }
 .slide-unit .percentage{
 	padding: 5px 0px;
-	background-color: #00CC99;
+	background-color: rgba(0,200,100,0.2);
 	position: absolute;
 	left:20%;
 	width:30%;
 	height:30px;
 }
 .slide-unit .position{
-	background-color: red;
+	background-color: gray;
 	position:absolute;
 	left:40%;
 	width: 3px;
