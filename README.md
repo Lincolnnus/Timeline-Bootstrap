@@ -19,8 +19,11 @@ The<code>js</code> folder stores the javascript files which will be used in this
 There are three files in the <code>js</code> folder.
 
 <code>jquery.js</code> is the jquery file.
-<code>ejs.js</code> is the ejs(embedded javascript) file.
-<code>timeline.js</code> is the related functions in the timeline project.
-<code>data.js</code> stores the json data which will be in the timeline project. The same data can be retrieved from ajax in the [bindaas API].
 
-The ajax implementation version can be found in the [node.js project].
+<code>ejs.js</code> is the ejs(embedded javascript) file.
+
+<code>timeline.js</code> is the related functions in the timeline project.
+
+<code>data.js</code> stores the json data which will be in the timeline project. The same data can be retrieved from ajax in the [bindaas API](https://github.com/Lincolnnus/Timeline-Bindaas).
+
+The ajax implementation version can be found in the [node.js project](https://github.com/Lincolnnus/Patient-Timeline-Node.js).
