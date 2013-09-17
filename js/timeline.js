@@ -1,3 +1,4 @@
+//To display the detail page
 function showDetail(){
     new EJS({url: 'templates/demographics.ejs'}).update('demographics', {demographics: demographics});
     new EJS({url: 'templates/immunizations.ejs'}).update('immunizations', {immunizations: immunizations});
@@ -6,11 +7,13 @@ function showDetail(){
     new EJS({url: 'templates/problems.ejs'}).update('problems', {problems: problems});
     new EJS({url: 'templates/procedures.ejs'}).update('procedures', {procedures: procedures});
 }
+//To display the timeline page
 function showTimeline(){
     new EJS({url: 'templates/demographics.ejs'}).update('demographics', {demographics: demographics});
     new EJS({url: 'templates/allergies.ejs'}).update('allergies', {allergies: allergies});
     new EJS({url: 'templates/timeline.ejs'}).update('timeline', {timeline: restructureTimeline(timeline)});
 }
+// To restructure timeline data from raw timeline data in data.js
 function restructureTimeline(timeline){
   var restruct = [];
   for (var i=0; i<timeline.length; i++){
@@ -18,6 +21,8 @@ function restructureTimeline(timeline){
   }
   return restruct.sort(function(a,b) { return parseFloat(b.year) - parseFloat(a.year) } );
 }
+
+// To merge timeline data based on the year of occurrence.
 function mergeTimeline(restruct, record){
   var yearExist = false;
   for (var i=0;i<restruct.length;i++){
@@ -36,11 +41,13 @@ function mergeTimeline(restruct, record){
   }
   return restruct;
 }
-
+//To display the labs page
 function showLabs(){
   new EJS({url: 'templates/demographics.ejs'}).update('demographics', {demographics: demographics});
   new EJS({url: 'templates/labs.ejs'}).update('labs', {labs: labs});
 }
+
+//To format date based on the json date format
 function formatDate(jsonDate)
 {
   if(jsonDate == null){
@@ -78,6 +85,8 @@ function formatDate(jsonDate)
   return year+'.'+month+'.'+date;
   }
 }
+
+//Click the show more url to display for external contents
 function showMore(url){
   window.open(url);
 }

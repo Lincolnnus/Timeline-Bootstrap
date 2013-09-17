@@ -1,3 +1,4 @@
+//This is the data variables for the ejs to render.
 var demographics = {
   "_id": {
     "$oid": "521c55ea3004e6fefc38ae9f"

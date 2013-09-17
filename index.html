@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GSOC 2013 Timeline Viewer</title>
+    <title>GSOC 2013 Timeline Viewer Timeline Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -41,16 +41,19 @@
       </div>
     </div>
     <div class="container">
+     <!-- Demograhpics Container -->
 	 <div class="row" id="demographics">
 	  </div>
 	  <hr>
 	  <div class="row">
+	  	<!-- Timeline Container -->
 	  	<div class="col-xs-9" id="timeline">
 	  	</div>
 	  	<div class="col-xs-3">
 	  		<div class="row">
 	  			<div class="col-xs-12">
 	  				<div class="header-unit">
+	  				  <!-- Plan of care container, no content in the ccda document-->
 					  <h3><i class="icon-plan"></i> Plan of Care</h3>
 					  <hr>
 					  <strong>Office Consultant</strong>
@@ -66,10 +69,12 @@
 	  			</div>
 	  		</div>
 	  		<div class="row">
+	  			<!-- Allergies Container -->
 	  			<div class="col-xs-12" id="allergies">
 	  			</div>
 	  		</div>
 	  		<div class="row">
+	  			<!-- Recommendations Container, no data from ccda document -->
 	  			<div class="col-xs-12">
 	  				<div class="header-unit">
 					  <h3>Recommendations</h3>
@@ -88,12 +93,13 @@
 	  <footer>
 		<p>© GSOC 2013</p>
 	  </footer>
-	    <script src="js/jquery.js"></script>
-	    <script src="js/ejs.js"></script>  
-	    <script src="js/data.js"></script>
-	    <script src="js/timeline.js"></script>
-	    <script type="text/javascript">showTimeline();
-		</script>
 	</div>
   </body>
+    <script src="js/jquery.js"></script>
+    <script src="js/ejs.js"></script>  
+    <script src="js/data.js"></script>
+    <script src="js/timeline.js"></script>
+    <script type="text/javascript">
+    	showTimeline();//show timeline
+	</script>
 </html>

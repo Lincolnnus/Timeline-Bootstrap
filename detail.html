@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GSOC 2013 Timeline Viewer</title>
+    <title>GSOC 2013 Timeline Viewer Detail Page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -42,12 +42,14 @@
       </div>
     </div>
     <div class="container">
-	   <div class="row" id="demographics">
+      <!-- Demographics Container -->
+	  <div class="row" id="demographics">
 	  </div>
 	  <hr>
 	  <div class="row">
 	  	<div class="col-xs-6">
 	  		<div class="row">
+	  			<!-- Plan of care container, not sure what to display -->
 	  			<h3><i class="icon-plan"></i>Plan of Care</h3>
 	  			<hr>
 	  			<div class="row detail">
@@ -69,16 +71,21 @@
 		  			</div>
 		  		</div>
 	  		</div>
+	  		<!-- Encounters Container -->
 	  		<div class="row" id="encounters">
 	  		</div>
+	  		<!-- Immunizations Container -->
 	  		<div class="row" id="immunizations">
 	  		</div>
 	  	</div>
 	  	<div class="col-xs-6">
+	  		<!-- Medications Container -->
 	  		<div class="row" id="medications">
 	  		</div>
+	  		<!-- Problems Container -->
 	  		<div class="row" id="problems">
 	  		</div>
+	  		<!-- Procedures Container -->
 	  		<div class="row" id="procedures">
 	  		</div>
 	  	</div>
@@ -87,13 +94,13 @@
 	  <footer>
 		<p>© GSOC 2013</p>
 	  </footer>
-	  <script src="js/jquery.js"></script>
-	  <script src="js/ejs.js"></script>
-	  <script src="js/data.js"></script>
-	  <script src="js/timeline.js"></script>
-	  <script>
-	  	showDetail();
-	  </script>
 	</div>
   </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/ejs.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/timeline.js"></script>
+  <script>
+  	showDetail();// Show Details
+  </script>
 </html>
