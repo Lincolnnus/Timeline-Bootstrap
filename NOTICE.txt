@@ -1,0 +1,15 @@
+==========================================================
+== NOTICE file for use with Patient Timeline Bootstrap ==
+==========================================================
+
+Patient Timeline Bootstrap 
+
+This project is part of A Timeline Viewer of Patient Medical Records project under the Google Summer of Code 2013 program.
+
+The following individuals were involved in the development
+Shaohuan Li   - shaohuan.li@gmail.com
+Ashish Sharma — ashish.sharma@emory.edu
+
+The project design is inspired from EMR Redesign for Patients by
+
+Russell Hertzberg, SoftServe Inc. www.softserveinc.com
